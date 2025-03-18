@@ -3,15 +3,14 @@
 	"id": "koalane-til-butikken",
 	"version": "${version}",
 	"name": "Koalane til butikken",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Changes the warp \"Koalane\" to \"Butikken\"",
 	"authors": [
 		"Cheese7856"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Cheese7856/koalane"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/koalane-til-butikken/icon.png",
 	"environment": "*",
 	"entrypoints": {
