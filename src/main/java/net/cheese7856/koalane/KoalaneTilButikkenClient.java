@@ -13,10 +13,8 @@ public class KoalaneTilButikkenClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		// Registrer keybinding
 		KeybindHandler.register();
 
-		// Registrer /ko som en egen kommando (for autokorrekt)
 		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
 			dispatcher.register(
 					ClientCommandManager.literal("ko")
@@ -108,7 +106,6 @@ public class KoalaneTilButikkenClient implements ClientModInitializer {
 			);
 		});
 
-		// Erstatt alle varianter av /warp ko, koa, koalane
 		ClientSendMessageEvents.ALLOW_COMMAND.register(command -> {
 			String normalizedCommand = command.trim().toLowerCase();
 
@@ -119,9 +116,9 @@ public class KoalaneTilButikkenClient implements ClientModInitializer {
 						client.player.networkHandler.sendCommand("warp Butikken");
 					}
 				});
-				return false; // Blokker original kommando
+				return false;
 			}
-			return true; // Tillat andre kommandoer
+			return true;
 		});
 	}
 }

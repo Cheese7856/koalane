@@ -1,30 +1,38 @@
 {
-	"schemaVersion": 1,
-	"id": "koalane-til-butikken",
-	"version": "${version}",
-	"name": "Koalane til butikken",
-	"description": "Changes the warp \"Koalane\" to \"Butikken\"",
-	"authors": [
-		"Cheese7856"
-	],
-	"contact": {
-		"sources": "https://github.com/Cheese7856/koalane"
-	},
-	"license": "MIT",
-	"icon": "assets/koalane-til-butikken/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"client": [
-			"net.cheese7856.koalane.KoalaneTilButikkenClient"
-		]
-	},
-	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "koalane-til-butikken",
+  "version": "${version}",
+  "name": "Koalane til Butikken",
+  "description": "Changes the warp \"Koalane\" to \"Butikken\"",
+  "authors": [
+    "Cheese7856"
+  ],
+  "contributors": [
+    {
+      "name": "DenKuleGutt (Icon Designer)",
+      "role": "Icon Designer"
+    }
+  ],
+  "contact": {
+    "sources": "https://github.com/Cheese7856/koalane",
+    "issues": "https://github.com/Cheese7856/koalane/issues",
+    "homepage": "https://modrinth.com/project/koalane-til-butikken"
+  },
+  "license": "MIT",
+  "icon": "assets/koalane-til-butikken/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.cheese7856.koalane.KoalaneTilButikkenClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }

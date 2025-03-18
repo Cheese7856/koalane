@@ -14,13 +14,12 @@ public class KeybindHandler {
         warpKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.koalane.warp",
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_K, // Tasten "K"
+                GLFW.GLFW_KEY_K,
                 "key.category.koalane"
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (warpKey.wasPressed() && client.player != null) {
-                // Bruk sendCommand i stedet for sendChatMessage
                 client.player.networkHandler.sendCommand("warp Butikken");
             }
         });
