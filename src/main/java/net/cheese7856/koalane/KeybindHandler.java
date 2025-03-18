@@ -11,18 +11,17 @@ public class KeybindHandler {
     private static KeyBinding warpKey;
 
     public static void register() {
-        // Registrer keybind med standardtast K
         warpKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.koalane.warp",
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_K,
+                GLFW.GLFW_KEY_K, // Tasten "K"
                 "key.category.koalane"
         ));
 
-        // Lytter etter tastetrykk
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (warpKey.wasPressed() && client.player != null) {
-                client.player.networkHandler.sendChatMessage("/warp Butikken");
+                // Bruk sendCommand i stedet for sendChatMessage
+                client.player.networkHandler.sendCommand("warp Butikken");
             }
         });
     }

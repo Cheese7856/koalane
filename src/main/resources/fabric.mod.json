@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"client": [
-			"net.cheese7856.koalane.KoalaneTilButikken"
+			"net.cheese7856.koalane.KoalaneTilButikkenClient"
 		]
 	},
 	"depends": {
